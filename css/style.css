@@ -23,6 +23,10 @@ img {
     border-radius: 5px;
 }
 
+header button img {
+    border-radius: 0px;
+}
+
 .container {
     margin: 0px auto;
     width: 1440px;
@@ -440,6 +444,7 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 .img-wrapper .square img {
