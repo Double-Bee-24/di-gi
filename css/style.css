@@ -6,7 +6,6 @@
     --body-color: #f2f2f2;
 }
 
-
 body {
     background-color: var(--body-color);
 }
@@ -852,28 +851,38 @@ a {
     text-decoration: none; 
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 1400px){
     .container { 
-       width: 320px;
-    }
-
-    #logo {
-        left: 25px;
-    }
-
-    .menu-button {
-        right: 20px;
+       width: 1400px;
     }
 
     #carousel {
-        width: 320px;
-        height: 193px;
+        width: 1400px;
         justify-content: space-evenly;
     }
 
+    #service hr {
+        left: -140px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .container { 
+       width: 1200px;
+    }
+
+    #carousel {
+        width: 1200px;
+        height: 444px;
+    }
+
     h1 {
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    h2 {
+        justify-content: center;
     }
 
     #carousel > p {
@@ -881,18 +890,105 @@ a {
     }
 
     .more-button {
-        width: 61px;
-        height: 8px;
+        width: 140px;
+        height: 35px;
     }
 
     .more-button p {
         display: block;
-        font-size: 5px;
+        font-size: 14px;
         margin: 0px auto;
     }
 
     .switch-button {
         top: 0px;
+    }
+
+    #move-left, #move-right {
+        width: 40px;
+        height: 40px;
+    }
+
+    #move-right {
+        top: 214px
+    }
+
+    #move-left {
+        top: 174px;
+    }
+    
+    #service hr {
+        left: -104px;
+    }
+
+    #text-block h2 {
+        justify-content: flex-start;
+    }
+
+    #our-project {
+        height: 842px;
+    }
+
+   .team-section-text-block {
+        padding-top: 4%;
+        width: 64%;
+   }
+
+    #last-news-section {
+        height: 850px;
+    } 
+
+    .image-wrapper {
+        width: 215px;
+    }
+
+    .image-wrapper:hover {
+        width: 215px;
+    }
+
+
+    .last-news-section-title-block {
+        height: 140px;
+    }
+
+    .last-news-section-title-block h2 {
+        font-size: 24px;
+        line-height: 38px;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .last-news-section-title-block hr {
+        left: 0px;
+        width: 50px;
+    }
+
+    .logo-block {
+        left: 490px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .container { 
+       width: 992px;
+    }
+
+    #logo {
+        left: 25px;
+    }
+
+    .menu-button {
+        right: 20px
+    }
+
+    #carousel {
+        width: 992px;
+        height: 405px;
+    }
+
+    h1 {
+        font-size: 54px;
+        line-height: 54px;
     }
 
     #move-right, #move-left {
@@ -915,6 +1011,145 @@ a {
         text-align: center;
     }
 
+    #service hr {
+        left: -65px;
+    }
+
+    #our-project {
+        height: 754px;
+    }
+
+
+    #our-project h2 {
+        font-size: 24px;
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    #our-project hr {
+        width: 50px;
+    }
+
+    .section-name {
+        height: 120px;
+    }
+
+    #team-section {
+        height: 534px;
+        flex-direction: row;
+    }
+
+    .team-section-image-block {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .team-section-image-block img {
+        position: relative;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .team-section-text-block {
+        width: 100%;
+        padding: 28px 65px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .team-section-text-block p, h2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .team-section-text-block h2 {
+        font-size: 24px;
+        line-height: 38px;
+        justify-content: flex-start;
+    }
+
+    .team-section-text-block p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .team-section-text-block hr {
+        padding: 0px;
+        width: 45px;
+    }
+
+    .team-section-text-block button p {
+        justify-content: center;
+    }
+
+    #last-news-section {
+        height: 1720px;
+    }
+
+    .image-wrapper {
+        width: 270px;
+    }
+
+    .last-news-section-title-block {
+        height: 140px;
+    }
+
+    .last-news-section-title-block h2 {
+        font-size: 24px;
+        line-height: 38px;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .last-news-section-title-block hr {
+        left: 0px;
+        width: 50px;
+    } */
+
+    #quote-section {
+        justify-content: space-around;
+        padding: 50px 0px;
+    }
+
+    #quote-section blockquote {
+        font-size: 24px;
+        line-height: 28px;
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    #quote-section strong {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    #quote-section p {
+        font-size: 20px;
+    }
+
+    .logo-block {
+        left: 382px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container { 
+       width: 768px;
+    }
+
+    #carousel {
+        width: 768px;
+        height: 320px;
+    }
+
+    .more-button {
+        width: 120px;
+        height: 30px;
+    }
+
     #service {
         height: 2800px;
         flex-direction: column;
@@ -924,13 +1159,13 @@ a {
     #service hr {
         position: absolute;
         top: 60px;
-        left: 110px;
+        left: 222px;
     }
 
     #text-block {
-        width: 100%;
-        height: 311px;
-        justify-content: space-around;
+        width: 70%;
+        height: 311px; 
+         justify-content: space-around;
         align-items: center;
     }
 
@@ -953,6 +1188,7 @@ a {
         letter-spacing: 2px;
         text-align: center;
         padding-left: 0px;
+        justify-content: center;
     }
 
     #icons-block {
@@ -969,109 +1205,29 @@ a {
         height: 1384px;
     }
 
-
-    #our-project h2 {
-        font-size: 24px;
-        padding-left: 0px;
-        margin: 0px;
-    }
-
-    #our-project hr {
-        width: 50px;
-    }
-
-    .section-name {
-        height: 120px;
-    }
-
     #team-section {
-        height: 844px;
+        height: 986px;
         flex-direction: column;
     }
 
-    .team-section-image-block {
-        position: relative;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .team-section-image-block img {
-        position: relative;
-        width: 90%;
-        justify-content: center;
-    }
-
     .team-section-text-block {
-        width: 100%;
         height: 581px;
-        padding: 50px 30px;
-        display: flex;
-        justify-content: space-around;
         align-items: center;
     }
 
     .team-section-text-block p, h2 {
-        width: 100%;
-        display: flex;
-        align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 0px;
     }
 
     .team-section-text-block h2 {
         font-size: 24px;
         line-height: 38px;
-    }
-
-    .team-section-text-block p {
-        font-size: 16px;
-        line-height: 18px;
-    }
-
-    .team-section-text-block hr {
-        padding: 0px;
-        width: 45px;
+        justify-content: center;
     }
 
     #last-news-section {
         height: 2975px;
-    }
-
-    .last-news-section-title-block {
-        height: 140px;
-    }
-
-    .last-news-section-title-block h2 {
-        font-size: 24px;
-        line-height: 38px;
-        padding: 0px;
-    }
-
-    .last-news-section-title-block hr {
-        left: 0px;
-        width: 50px;
-    }
-
-    #quote-section {
-        justify-content: space-around;
-        padding: 50px 0px;
-    }
-
-    #quote-section blockquote {
-        font-size: 24px;
-        line-height: 28px;
-        width: 100%;
-        padding: 0px 20px;
-    }
-
-    #quote-section strong {
-        font-size: 24px;
-        line-height: 28px;
-    }
-
-    #quote-section p {
-        font-size: 20px;
     }
 
     footer {
@@ -1114,7 +1270,7 @@ a {
     }
 
     .logo-block {
-        left: 45px;
+        left: 272px;
     }
 
     address {
@@ -1141,5 +1297,84 @@ a {
 
     #link-to-header div {
         margin: 0px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .container { 
+       width: 576px;
+    }
+
+    #carousel {
+        width: 576px;
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .more-button {
+        width: 100px;
+        height: 20px;
+    }
+
+    .more-button p {
+        font-size: 10px;
+    }
+
+    #service hr {
+        left: 237px;
+    }
+
+    #text-block {
+        width: 100%;
+    }
+
+    #team-section {
+        height: 844px;
+    }
+
+    .logo-block {
+        left: 175px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container { 
+       width: 320px;
+    }
+
+    #carousel {
+        width: 320px;
+        height: 193px;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .more-button {
+        width: 61px;
+        height: 8px;
+    }
+
+    .more-button p {
+        font-size: 5px;
+    }
+
+    #service hr {
+        left: 110px;
+    }
+
+    .team-section-text-block {
+        padding: 50px 30px;
+    }
+
+    .logo-block {
+        left: 45px;
     }
 }
