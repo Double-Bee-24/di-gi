@@ -16,6 +16,7 @@ body {
 button {
     cursor: pointer;
     border-radius: 5px;
+    text-transform: uppercase;
 } 
 
 img {
@@ -69,12 +70,6 @@ header {
      align-items: center;
 }
 
- /* .owl-carousel {
-    position: relative;
-    width: 100%;
-    height: 100%;
-} */
-
 .slide {
     position: relative;
     width: 1440px;
@@ -102,6 +97,7 @@ h1 {
     line-height: 96px;
     letter-spacing: 2px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 p {
@@ -120,36 +116,9 @@ p {
     width: 200px;
     height: 50px;
     background-color: var(--background-blue);
-    cursor: pointer; 
-}
-
-.more-button p {
-    position: relative;
-    font-family: 'Inconsolata', monospace;
+    color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0em;
-    width: 100%;
-    text-align: center;
-    line-height: 50%;   
-}
-
-.switch-button {
-    width: 50px;
-    position: relative;
-    top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.radio-def {
-    width: 10px;
-    height: 10px;
-    border: 6px solid white;
-    border-radius: 30px;
-    background-color: transparent;
+    font-size: 18px; 
 }
 
 /* Owl carousel elements customization */
@@ -181,48 +150,18 @@ p {
     justify-content: center;
     position: relative;
     bottom: 50px;
-  }
+}
   
-  .owl-dot {
+.owl-dot {
     background: #ccc !important; 
     height: 12px;
     width: 12px;
     margin: 0 5px;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .owl-dot.active {
+.owl-dot.active {
     background: #555 !important; 
-  }
-
-#move-left, #move-right {
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    right: 0px;
-    border-radius: 0px;
-}
-
-#move-left {
-    top: 297px;
-    background-color: var(--background-blue); 
-}
-
-#move-right {
-    top: 366px;
-    background-color: var(--grey-light); 
-}
-
-#move-left p, #move-right p {
-    position: relative;
-    font-size: 50px;
-    width: 100%;
-    color: var(--white);
-    margin: 0px; 
-}
-
-#move-right p {
-    color: var(--grey);
 }
 
 #recall-me {
@@ -250,16 +189,10 @@ p {
     width: 200px;
     height: 50px;
     background-color: var(--grey-light);
-}
-
-.recall-button p {
     position: relative;
     color: var(--background-blue);
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100%;
     font-size: 18px;
-    margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,6 +277,11 @@ hr {
     left: -147px;
 }
 
+.icon .icon-subtitle {
+    text-transform: uppercase;
+    color: #4A4A4A;
+}
+
 #icons-block {
     position: relative;
     width: 64%;
@@ -392,7 +330,7 @@ hr {
     line-height: 19px;
     letter-spacing: 2px;
     text-align: center;
-    color: black;
+    color: #9B9B9B
 }
 
 .hidden-text {
@@ -412,13 +350,14 @@ hr {
     justify-content: center;
 }
 
-#def-text {
+.def-text {
     font-family: 'Roboto', sans-serif;
     color: #9B9B9B;
 }
 
-#more-text {
+.icon .more-text {
     color: var(--background-blue); 
+    text-transform: uppercase;
 }
 
 #our-project {
@@ -582,12 +521,11 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.team-section-text-block button p{
-    width: 90%;
     color: #F9F6E5;
     text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 #last-news-section {
@@ -763,7 +701,7 @@ hr {
     align-items: center;
 }
 
-#quote-section .radio-def {
+.radio-def {
     position: relative;
     width: 10px;
     height: 10px;
@@ -845,14 +783,7 @@ footer .text-block {
     border-right: none;
 }
 
-address {
-    column-count: 4;
-    column-gap: 120px;
-    font-style: normal;
-    margin-top: 15px;
-}
-
-h3 {
+span {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -863,7 +794,17 @@ h3 {
     margin-top: 0px;
 }
 
-address p {
+.address-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.address-block div {
+    width: 25%;
+}
+
+.address-block div p {
     font-family: "Roboto",sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -872,6 +813,10 @@ address p {
     text-align: left;
     width: 240px;
     color: white
+}
+
+.address-block a {
+    color: white;
 }
 
 #link-to-header {
@@ -963,16 +908,7 @@ a {
     .more-button {
         width: 140px;
         height: 35px;
-    }
-
-    .more-button p {
-        display: block;
         font-size: 14px;
-        margin: 0px auto;
-    }
-
-    .switch-button {
-        top: 0px;
     }
 
     #move-left, #move-right {
@@ -1152,10 +1088,6 @@ a {
         width: 45px;
     }
 
-    .team-section-text-block button p {
-        justify-content: center;
-    }
-
     #last-news-section {
         height: 1720px;
     }
@@ -1178,7 +1110,7 @@ a {
     .last-news-section-title-block hr {
         left: 0px;
         width: 50px;
-    } */
+    }
 
     #quote-section {
         justify-content: space-around;
@@ -1348,20 +1280,18 @@ a {
         left: 272px;
     }
 
-    address {
-        height: 100%;
-        column-count: 1;
-        display: flex;
+   .address-block {
         flex-direction: column;
         justify-content: space-between;
     }
 
-    address h3 {
-        text-align: center;
-        margin: 40px 0px 0px 0px;
+    .address-block div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
-    address p {
+    .address-block div p {
         text-align: center;
     }
 
@@ -1394,9 +1324,6 @@ a {
     .more-button {
         width: 100px;
         height: 20px;
-    }
-
-    .more-button p {
         font-size: 10px;
     }
 
@@ -1435,9 +1362,6 @@ a {
     .more-button {
         width: 61px;
         height: 8px;
-    }
-
-    .more-button p {
         font-size: 5px;
     }
 
