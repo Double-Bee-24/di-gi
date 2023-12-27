@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Di Gi - Digital agency</title>
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -20,7 +23,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inconsolata:wght@500&family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
 
-  <!-- <meta property="" content="" /> -->
+  <meta property="og:description" content="Di Gі — це діджитал агенція повного циклу, спрямована на найкращий результат наших клієнтів в маркетингу, продажах та управлінні" />
+  <meta property="og:image" content="https://double-bee-24.github.io/di-gi/images/bg-img.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="uk_UA" />
+
+  <link rel="icon" href="images/icons/icons8-digital-marketing-64.png" type="image/x-icon" />
 </head>
 <body>
   <header class="container" id="page-top">
@@ -29,26 +37,31 @@
   </header>
   
   <section class="container" id="carousel">
-    <h1>МИСЛИ <br> ГЛОБАЛЬНО</h1>
-    <p>Di Gі — це діджитал агенція повного циклу, спрямована на найкращий результат наших клієнтів в маркетингу, продажах та управлінні</p>
-    <button class="more-button">
-      <p>ДЕТАЛЬНІШЕ<p>
-    </button>
+    <div class="owl-carousel">
+      <div class="slide">
+        <h1>ТРИМАЙ <br> КУРС </h1>
+        <p>Навіть коли вітри змін підганяють, тримай свій курс, бо справжня сила полягає в стійкості</p>
+        <button class="more-button">
+          <p>ДЕТАЛЬНІШЕ<p>
+        </button>
+      </div>
 
-    <div class="switch-button">
-      <div class="radio-def"></div>
-    
-      <div class="radio-def"></div>
-    
-      <div class="radio-def"></div>
+      <div class="slide">
+        <h1>МИСЛИ <br> ГЛОБАЛЬНО</h1>
+        <p>Di Gі — це діджитал агенція повного циклу, спрямована на найкращий результат наших клієнтів в маркетингу, продажах та управлінні</p>
+        <button class="more-button">
+          <p>ДЕТАЛЬНІШЕ<p>
+        </button>
+      </div>
+
+      <div class="slide">
+        <h1>ДІЙ <br> МУДРО</h1>
+        <p>У кожному кроці та виборі прокладена стежка до мудрості, не упускай моменти і вчися з кожного вчинку</p>
+        <button class="more-button">
+          <p>ДЕТАЛЬНІШЕ<p>
+        </button>
+      </div>
     </div>
-
-    <button id="move-left">
-      <p>&lt;</p>
-    </button>
-    <button id="move-right">
-      <p>&gt;</p>
-    </button>
   </section>
 
 
@@ -371,6 +384,8 @@
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="jquery.min.js"></script> -->
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
