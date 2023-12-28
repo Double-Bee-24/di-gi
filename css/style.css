@@ -15,8 +15,9 @@ body {
 
 button {
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
     text-transform: uppercase;
+    border: none;
 } 
 
 img {
@@ -153,15 +154,16 @@ p {
 }
   
 .owl-dot {
-    background: #ccc !important; 
+    background-color: white !important; 
     height: 12px;
     width: 12px;
     margin: 0 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 6px;
 }
   
 .owl-dot.active {
-    background: #555 !important; 
+    background: transparent !important;
+    border: 1px solid white !important; 
 }
 
 #recall-me {
@@ -225,6 +227,7 @@ p {
     height: 546px;
     background-color: var(--white);
     display: flex;
+    align-items: center;
 }
 
 #text-block {
@@ -259,7 +262,6 @@ p {
     line-height: 56px;
 }
 
-
 #text-block p:first-of-type {
     font-size: 24px;
     line-height: 26px;
@@ -285,6 +287,7 @@ hr {
 #icons-block {
     position: relative;
     width: 64%;
+    height: 99%;
     display: flex;
     flex-direction: row;
 }
@@ -297,6 +300,10 @@ hr {
     justify-content: space-around;
 }
 
+.icons-subblock a {
+    height: 100%;
+}
+
 .icon {
     position: relative;
     width: 100%;
@@ -305,20 +312,18 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 12px 0px;
-    padding-top: 10px;
+    border: 4px solid transparent;
+    transition: 0.6s;
 }
 
 .icon:hover {
-    border: 4px solid var(--background-blue);
-    justify-content: flex-start;
+    border-color: #2B4074;
     cursor: pointer;
 }
 
 .icon:hover .hidden-text {
     opacity: 1;
     display: block;
-    transition: opacity 0.3s ease; 
 }
 
 .icon p {
@@ -339,7 +344,6 @@ hr {
     opacity: 0;
     color: var(--background-blue); 
 }
-  
 
 .icon-image {
     position: relative;
@@ -438,10 +442,11 @@ hr {
     width: 90%;
     height: 90%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    opacity: 0;
+    transition: 0.6s;
 }
 
 .img-wrapper .square img {
@@ -452,12 +457,8 @@ hr {
 
 
 .img-wrapper:hover .square {
-    position: absolute;
     visibility: visible;
-    top: 5%;
     background-color: #F9F6E5;
-    width: 90%;
-    height: 90%;
     z-index: 2;
     opacity: 0.9;
 }
@@ -584,20 +585,15 @@ hr {
     bottom: 0px;
     display: flex;
     align-items: center;
+    transition: 0.6s;
 }
 
 .image-wrapper {
     position: relative;
     width: 270px;
     margin-bottom: 30px;
-}
-
-.image-subtitle {
-    height: 40px;
-    width: 100%;
-    position: absolute;
-    background-color: #FFFFFF;
-    bottom: 0;
+    border: 10px solid transparent;
+    transition: 0.6s;
 }
 
 .last-news-section-images-block p{
@@ -612,16 +608,10 @@ hr {
 }
 
 .image-wrapper:hover {
-    position: relative;
-    width: 270px;
-    margin-bottom: 30px;
-    border: 10px solid var(--background-blue);
+    border-color: #2B4074;
 }
 
 .last-news-section-images-block .image-wrapper:hover .info-button {
-    position: absolute;
-    width: 28px;
-    height: 28px;
     visibility: visible;
 }
 
@@ -629,9 +619,10 @@ hr {
     position: absolute;
     width: 28px;
     height: 28px;
-    top: 32%;
+    bottom: 50%;
     left: 45%;
     visibility: hidden;
+    transition: 0.3s;
 }
 
 .last-news-section-images-block .image-wrapper:hover .image-subtitle {
@@ -641,11 +632,6 @@ hr {
 
 .last-news-section-images-block .image-wrapper:hover p {
     color: #F9F6E5;
-}
-
-.last-news-section-images-block .image-wrapper img:first-of-type:hover {
-    position: relative;
-    height: 140%;
 }
 
 .last-news-section-images-block .image-wrapper:hover {
@@ -705,7 +691,7 @@ hr {
     position: relative;
     width: 10px;
     height: 10px;
-    border: #2B4074;
+    border: var(--background-blue)
     border-radius: 5px;
     background-color: var(--background-blue);
 }
@@ -948,11 +934,6 @@ a {
     .image-wrapper {
         width: 215px;
     }
-
-    .image-wrapper:hover {
-        width: 215px;
-    }
-
 
     .last-news-section-title-block {
         height: 140px;
