@@ -6,6 +6,10 @@
     --body-color: #f2f2f2;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--body-color);
 }
@@ -653,15 +657,15 @@ hr {
     height: 25px;
 }
 
+#quote-section blockquote {
+    margin: 36px 0px;
+}
+
 #quote-section blockquote, strong {
     font-family: "Roboto Condensed",sans-serif;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    color: #4A4A4A;
-}
-
-#quote-section blockquote {
     color: #4A4A4A;
 }
 
@@ -675,6 +679,7 @@ hr {
     line-height: 28px;
     letter-spacing: 2px;
     color: #4A4A4A;
+    width: auto;
 }
 
 .radio-wrapper {
